@@ -1,0 +1,19 @@
+.nav-wrapper{
+	background-color: #ff0000;
+}
+.slider .indicators .indicator-item.active{
+	background-color: #ff0000 ;
+}
+.parallax-container{
+	min-height: 380px;
+	height: auto;
+}
+.icon-coffee{
+	color:#2e7d32 ;
+}
+.footer-one{
+	background-color: #2e7d32 ;
+}
+.footer-two{
+	background-color: #2e7d32 ;
+}
