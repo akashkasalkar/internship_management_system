@@ -20,18 +20,22 @@
 </head>
 <body>
 	<section id="myfnavbar">
-	 <div class="navbar-fixed">
+	 <div class="navbar-fixed ">
 	    <nav>
 	      <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo">Logo</a>
+	        <a href="#!" class="brand-logo"><img src="img/logo2.jpg" height="60" width="70" style="padding: 5px"></a>
+
 	        <ul class="right hide-on-med-and-down">
-	          <li><a href="sass.html">About</a></li>
+
+	          <li><a href="#"></a></li>
+	          <li><a href="#">About</a></li>
 	          
 	        </ul>
 	      </div>
 	    </nav>
 	  </div>		
 	</section>
+	<h2 class="center-align" style="text-shadow: 2px 2px yellow">Application for Internship Certificate</h2>
 	<section id="myform">
 		<div class="container">
 			<div class="row">
@@ -68,6 +72,7 @@
 						 <option value="" disabled selected>Choose your Faculty</option>
 							  <option>veena Desai</option>
 							  <option>B.M.Patil</option>
+							  <option>Minal Patil</option>
 						</select>
 					 </div> 
 					  <p>
@@ -84,20 +89,24 @@
 
 				</div>
 				<div class="col s12 l10 m10  ">
-        		  <h5 class=" black-text "><b>Company Details</b></h5>
-					<div class="input-field ">
+						  <h5 class=" black-text "><b>Company Details</b></h5>
+					<div class="row">
+						<div class="col s12 l6 m6">
+							<div class="input-field ">
 					  	<input type="text" name="company_name" id="company_name" >
         				 <label for="company_name">Company Name</label>
 					 </div>  
 					 <div class="input-field">
-       					 <textarea id="textarea1" class="materialize-textarea" data-length="160" name="company_location"></textarea>
-       					 <label for="textarea1">Company Location/Address</label>
+       						<input type="text" name="company_location" id="company_location" >
+       					 <label for="company_location">Company Location/Address</label>
      				 </div>
 					 <div class="input-field ">
 					  	<input type="url" name="company_weblink" id="company_weblink" >
         				 <label for="company_weblink">Company Weblink</label>
-					 </div>  
-					 <div class="input-field ">
+					 </div> 
+						</div>
+						<div class="col s12 l6 m6">
+							<div class="input-field ">
 					  	<input type="text" name="hr_name" id="hr_name" >
         				 <label for="hr_name">HR / External Guide Name</label>
 					 </div> 
@@ -109,6 +118,11 @@
         				<input type="number" name="hr_phone" id="hr_phone" class="validate">
         				<label for="hr_phone">HR / External Guide's Phone Number</label>
         			</div>
+						</div>
+					</div>
+        	
+					 
+					 
 
 				</div>
 				<div class="col s12 l10 m10  ">
@@ -126,10 +140,7 @@
 					  	<input type="text" name="stipend" id="stipend" >
         				 <label for="stipend">Stipend</label>
 					 </div> 
-					 <div class="input-field">
-        				<input type="email" name="hr_email" id="hr_email" >
-        				<label for="hr_email">HR / External Guide's Email ID</label>
-        			</div>	
+					 	
         			<div class="input-field">
         				<input type="number" name="duration" id="duration" >
         				<label for="duration">Duration in week</label>
@@ -138,6 +149,10 @@
         				<input type="date" name="start_date" id="start_date" >
         				<label for="start_date">Start Datek</label>
         			</div>
+        			<div class="input-field">
+        				<button class="btn waves-effect waves-light" type="submit" name="submit">Apply</button>
+        			</div>
+        			  
 
 				</div>
 				</form>
