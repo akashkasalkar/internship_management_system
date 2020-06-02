@@ -21,7 +21,7 @@
 <body>
 	<section id="myfnavbar">
 	 <div class="navbar-fixed ">
-	    <nav>
+	    <nav>       
 	      <div class="nav-wrapper">
 	        <a href="#!" class="brand-logo"><img src="img/logo2.jpg" height="60" width="70" style="padding: 5px"></a>
 
@@ -147,7 +147,7 @@
         			</div>
         			<div class="input-field">
         				<input type="date" name="start_date" id="start_date" >
-        				<label for="start_date">Start Datek</label>
+        				<label for="start_date">Start Date</label>
         			</div>
         			<div class="input-field">
         				<button class="btn waves-effect waves-light" type="submit" name="submit">Apply</button>

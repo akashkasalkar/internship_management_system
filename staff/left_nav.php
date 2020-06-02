@@ -60,8 +60,8 @@ position:absolute;
               <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Change Password</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                target="_blank">View Applications</a>
+              <a class="nav-link waves-effect" href="view_application.php"
+                >View Applications</a>
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
@@ -93,12 +93,12 @@ position:absolute;
       </a>
 
       <div class="list-group list-group-flush">
-        <a href="dashboard.php" class="list-group-item active waves-effect">
+        <a href="dashboard.php" class="list-group-item waves-effect">
           <i class="fas fa-chart-pie mr-3"></i>Dashboard
         </a>
         <a href="profile.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-user mr-3"></i>Profile</a>
-        <a href="#" class="list-group-item list-group-item-action waves-effect">
+        <a href="view_application.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-table mr-3"></i>View Applications</a>
         <a href="#" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-map mr-3"></i>Add New Student</a>
