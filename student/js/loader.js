@@ -1,4 +1,5 @@
   $(document).ready(function(){
     $('select').formSelect();
-     $('input#input_text, textarea#textarea1').characterCounter();
+     $('.sidenav').sidenav();
+     $('.file-upload').file_upload();
   });

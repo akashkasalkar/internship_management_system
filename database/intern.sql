@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2020 at 04:30 PM
+-- Generation Time: Jun 04, 2020 at 04:01 PM
 -- Server version: 10.1.40-MariaDB
 -- PHP Version: 7.3.5
 
@@ -41,7 +41,7 @@ CREATE TABLE `dept` (
 --
 
 INSERT INTO `dept` (`department_id`, `department_name`, `email`, `username`, `password`) VALUES
-('1', 'mca', 'aaa@gmail.com', 'ak', '11'),
+('1', 'mca', 'abchod@gmail.com', 'ak', '11'),
 ('2', 'mech', 'nn@gmail.com', 'nnnn', '22'),
 ('3', 'civil', 'nam@gmail.com', 'ak', '22'),
 ('4', 'enc', 'k@gmail.com', 'kk', '11');
@@ -68,8 +68,33 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`staff_id`, `staff_name`, `department`, `email`, `password`, `dept_id`, `phone`, `gender`) VALUES
+('121', 'Minal Patil', 'mca', 'minal@gmail.com', '12345', '', '', ''),
 ('3', 'akkya', 'mech', 'an@gmail.com', '123', '', '', ''),
 ('4', 'kk', 'aa', 'a@gmail.com', '22', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student`
+--
+
+CREATE TABLE `student` (
+  `usn` varchar(100) NOT NULL,
+  `name` varchar(300) NOT NULL,
+  `email` varchar(300) NOT NULL,
+  `gender` varchar(1) NOT NULL,
+  `dob` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `sem` int(6) NOT NULL,
+  `department` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `student`
+--
+
+INSERT INTO `student` (`usn`, `name`, `email`, `gender`, `dob`, `phone`, `sem`, `department`) VALUES
+('5', 'akash', '', '', '2222-02-22', '', 0, 'mca');
 
 --
 -- Indexes for dumped tables
@@ -86,6 +111,12 @@ ALTER TABLE `dept`
 --
 ALTER TABLE `staff`
   ADD PRIMARY KEY (`staff_id`);
+
+--
+-- Indexes for table `student`
+--
+ALTER TABLE `student`
+  ADD PRIMARY KEY (`usn`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

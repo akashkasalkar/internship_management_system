@@ -36,11 +36,11 @@
                     
                     <tr>
                       <th><label>USN:</label></th>
-                       <td><label>2JI18MCA75</label></td>
+                       <td><label>2JI18MCA55</label></td>
                     </tr>
                     <tr>
                       <th>Name</th>
-                      <td>namrata arun  chougule</td>
+                      <td>Urmila Mandolkar</td>
                     </tr>
                     <tr>
                       <th>Email</th>

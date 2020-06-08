@@ -2,39 +2,11 @@
 <html>
 <head>
 	<title>Apply</title>
-	<!-- font -->
-	<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
-	
-
-	<!-- icon -->
-	
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-	<!-- Actual M  -->
-
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- custome css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<section id="myfnavbar">
-	 <div class="navbar-fixed ">
-	    <nav>       
-	      <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo"><img src="img/logo2.jpg" height="60" width="70" style="padding: 5px"></a>
-
-	        <ul class="right hide-on-med-and-down">
-
-	          <li><a href="#"></a></li>
-	          <li><a href="#">About</a></li>
-	          
-	        </ul>
-	      </div>
-	    </nav>
-	  </div>		
-	</section>
+<section class="fnavbar">
+	 <?php include "navbar.php"; ?>
+</section>
 	<h2 class="center-align" style="text-shadow: 2px 2px yellow">Application for Internship Certificate</h2>
 	<section id="myform">
 		<div class="container">
@@ -161,11 +133,5 @@
 		</div>
 	</section>
 </body>
-<!-- jquery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-<!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- loadre -->
-    <script type="text/javascript" src="js/loader.js"></script>
 </html>

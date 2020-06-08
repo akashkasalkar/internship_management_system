@@ -1,4 +1,5 @@
  <head>
+  <?php include "include/dbconn.php"; ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -64,8 +65,7 @@ position:absolute;
                 >View Applications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                target="_blank">Add New Students</a>
+              <a class="nav-link waves-effect" href="add_student.php">Add New Students</a>
             </li>
            
           </ul>
@@ -100,9 +100,9 @@ position:absolute;
           <i class="fas fa-user mr-3"></i>Profile</a>
         <a href="view_application.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-table mr-3"></i>View Applications</a>
-        <a href="#" class="list-group-item list-group-item-action waves-effect">
+        <a href="add_student.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-map mr-3"></i>Add New Student</a>
-        <a href="#" class="list-group-item list-group-item-action waves-effect">
+        <a href="view_student.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-money-bill-alt mr-3"></i>View Student</a>
       </div>
 

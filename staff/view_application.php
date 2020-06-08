@@ -38,14 +38,6 @@
                 <th>Company Name</th>
               </tr>
               <tr>
-                <td>2JI18MCA75</td>
-                <td>namrata arun chougule</td>
-                <td>File Management</td>
-                <td>Code Villa</td>
-                <td><button class="btn btn-primary">View More</button></td>
-                <td><button class="btn btn-danger">Reject</button></td>
-              </tr>
-              <tr>
                 <td>2JI18MCA55</td>
                 <td>Urmila Mandolkar</td>
                 <td>online Bidding System</td>

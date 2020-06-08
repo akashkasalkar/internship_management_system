@@ -1,6 +1,6 @@
 <?php
 
 
-$conn =mysqli_connect("localhost","root","","application") or die("Error");
+$conn =mysqli_connect("localhost","root","","intern") or die("Error");
 
 ?>
