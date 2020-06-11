@@ -7,7 +7,7 @@
 	$exe=mysqli_query($conn,$qry);
 	if ($exe) {
 		echo "<script> alert('data deleted');
-			window.location='view.php';
+			window.location='view_department.php';
 		</script>";
 		
 	}

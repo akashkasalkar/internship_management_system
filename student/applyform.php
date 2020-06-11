@@ -12,33 +12,11 @@
 		<div class="container">
 			<div class="row">
 				<form method="post">
-					<div class="col s12 l10 m10 ">
 					
-        				  <h5 class=" black-text "><b>Student Information</b></h5>
-        				  	
-        				  		<div class="input-field">
-        				  			<input type="text" name="name" id="name" class="validate">
-        				  			<label for="name">Your Full Name</label>
-        				  		</div>
-        				  		<div class="input-field">
-        				  			<input type="text" name="usn" id="usn" required="">
-        				  			<label for="usn">Your USN</label>
-        				  		</div>
-        				  		<div class="input-field">
-        				  			<input type="email" name="email" id="email" class="validate">
-        				  			<label for="email">Your Email</label>
-        				  		</div>			
-					</div>
 				
 				<div class="col s12 l10 m10  ">
         		  <h5 class=" black-text "><b>Internal Guide's / Mentor's Details</b></h5>
-					<div class="input-field ">
-					  <select id="department">
-						 <option value="" disabled selected>Choose your Department</option>
-							  <option>MCA</option>
-							  <option>MBA</option>
-						</select>
-					 </div>  
+					
 					 <div class="input-field ">
 					  <select id="department">
 						 <option value="" disabled selected>Choose your Faculty</option>

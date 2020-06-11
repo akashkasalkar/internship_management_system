@@ -96,7 +96,7 @@ position:absolute;
         <a href="dashboard.php" class="list-group-item waves-effect">
           <i class="fas fa-chart-pie mr-3"></i>Dashboard
         </a>
-        <a href="profile.php" class="list-group-item list-group-item-action waves-effect">
+        <a href="staff_profile.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-user mr-3"></i>Profile</a>
         <a href="view_application.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-table mr-3"></i>View Applications</a>

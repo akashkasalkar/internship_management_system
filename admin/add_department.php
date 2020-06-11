@@ -65,19 +65,20 @@ if(isset($_POST['submit']))
 		}
 		else
 		{
+		
 							
-			$qry="INSERT INTO `dept`(`department_id`, `depaartment_name`, `email`, `password`) VALUES('$dept_id','$dept_name','$email','$password')";
+			$qry="INSERT INTO `dept`(`department_id`, `department_name`, `email`, `password`) VALUES('$dept_id','$dept_name','$email','$password')";
 				$exe=mysqli_query($conn,$qry);
 				if($exe==true)
 				{
 					echo " <script> alert('data inserted');
-			window.location='view.php';
+			window.location='view_department.php';
 		</script>";
 				}
 				else
 				{
 					echo "<script> alert('error');
-			window.location='view.php';
+			
 		</script>";
 				}
 	}				

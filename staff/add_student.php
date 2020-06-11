@@ -41,7 +41,7 @@
               </div>
               <div class="form-group">
                 <label>DOB</label>
-                <input type="date" name="dob" class="form-control">
+                <input type="date" name="dob" class="form-control"  max="<?php echo date('Y-m-d'); ?>">
               </div>
               <div class="form-group">
                 <button class="btn btn-primary" name="save">Save</button>
@@ -62,7 +62,9 @@
     $qry="INSERT INTO `student`(`usn`, `name`,`dob`,`department`) VALUES('$usn','$name','$dob','$department')";
     $exc=mysqli_query($conn,$qry);
     if ($exc) {
-      echo "<script>alert('Data Added successfully')</script>";
+      echo "<script>alert('Data Added successfully');
+          window.location='view_student.php';
+      </script>";
     }
     else
     {
