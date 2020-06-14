@@ -1,3 +1,10 @@
+
+<?php
+    session_start();
+    if (!isset($_SESSION['usn'])) {
+        header("location:../index.php");
+    }
+ ?>
 <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
 	
 

@@ -29,7 +29,7 @@
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      <p class="footer text-center">Copyright &copy; Internship Management System 2020  <strong>MCA</strong> project Made by <strong>Akash Kasalkar 146891645</strong></p>
+      <p class="footer text-center">Copyright &copy; Internship Management System 2020  <strong>MCA</strong> project Made by <strong>Namrata Chougule 146891645</strong></p>
     </div>
     <!--/.Copyright-->
 

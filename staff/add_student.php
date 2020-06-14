@@ -56,10 +56,16 @@
     $usn=$_POST['usn'];
     $name=$_POST['student_name'];
     $dob=$_POST['dob'];
-    $department="mca"; //to do
-
+    $password=$_POST['dob'];
+    $staff_username=$_SESSION['staff_username'];
+    $staff_qry="select * from staff where email='$staff_username'";
+    $staff_exc=mysqli_query($conn,$staff_qry);
+    while ($row=mysqli_fetch_array($staff_exc)) {
+      $department=$row['department'];
+       $staff_id=$row['staff_id'];
+    }
    
-    $qry="INSERT INTO `student`(`usn`, `name`,`dob`,`department`) VALUES('$usn','$name','$dob','$department')";
+    $qry="INSERT INTO `student`(`usn`, `name`, `dob`, `department`, `password`,`staff_id`) VALUES('$usn','$name','$dob','$department','$password','$staff_id')";
     $exc=mysqli_query($conn,$qry);
     if ($exc) {
       echo "<script>alert('Data Added successfully');

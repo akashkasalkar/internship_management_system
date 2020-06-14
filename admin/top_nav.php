@@ -1,4 +1,11 @@
+
 <?php include "include/dbconn.php"; ?>
+<?php
+    session_start();
+    if (!isset($_SESSION['admin_email'])) {
+        header("location:../index.php");
+    }
+ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -54,7 +61,7 @@
                         <a href="#">About</a>
                     </li>
                   <li>
-                       <a href="admin_logout.php" style="font-size: x-large;"><span class="glyphicon glyphicon-off title=" title="logout"></span> </a>
+                       <a href="logout.php" style="font-size: x-large;"><span class="glyphicon glyphicon-off title=" title="logout"></span> </a>
                        
                     </li>			
                     

@@ -3,7 +3,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="footer text-center">Copyright &copy; Internship Management System 2020  <strong>MCA</strong> project Made by <strong>Akash Kasalkar 146891645</strong></p>
+                    <p class="footer text-center">Copyright &copy; Internship Management System 2020  <strong>MCA</strong> project Made by <strong>Namrata Chougule 146891645</strong></p>
                 </div>
             </div>
         </footer>

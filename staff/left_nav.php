@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['staff_username'])) {
+        header("location:../index.php");
+    }
+ ?>
  <head>
   <?php include "include/dbconn.php"; ?>
   <meta charset="utf-8">
@@ -49,32 +55,17 @@ position:absolute;
 
         <!-- Links -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-          <!-- Left -->
+           <!-- Left -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <a class="nav-link waves-effect" href="dashboard">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Change Password</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="view_application.php"
-                >View Applications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="add_student.php">Add New Students</a>
-            </li>
+           
+           
            
           </ul>
-
           <!-- Right -->
           <ul class="navbar-nav nav-flex-icons">
             
             <li class="nav-item">
-              <a class="nav-link waves-effect btn btn-danger text-white " href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Logout</a>
+              <a class="nav-link waves-effect btn btn-danger text-white " href="logout.php" target="_blank">Logout</a>
             </li>
             
           </ul>
@@ -104,6 +95,8 @@ position:absolute;
           <i class="fas fa-map mr-3"></i>Add New Student</a>
         <a href="view_student.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-money-bill-alt mr-3"></i>View Student</a>
+          <a href="change_password.php" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-table mr-3"></i>Change Password</a>
       </div>
 
     </div>

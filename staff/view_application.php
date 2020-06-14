@@ -32,18 +32,59 @@
             <h1 class="text-danger text-center">View Application</h1>
             <table class="table table-bordered">
               <tr>
+
                 <th>USN</th>
-                <th>Name</th>
+                <th>Student Name</th>
+                <th>Student Phone</th>
                 <th>Internship Title</th>
                 <th>Company Name</th>
+                
               </tr>
+              <?php
+              $staff_username=$_SESSION['staff_username'];
+              $staff_qry="select * from staff where email='$staff_username'";
+              $staff_exc=mysqli_query($conn,$staff_qry);
+              while ($row3=mysqli_fetch_array($staff_exc)) {
+                # code...
+                $staff_id=$row3['staff_id'];
+              }
+
+               $qry4="select * from student where staff_id='$staff_id'";
+                $exc4=mysqli_query($conn,$qry4);
+               while ($row4=mysqli_fetch_array($exc4)) {
+                $usn=$row4['usn'];
+              
+              
+
+
+
+               $qry="select * from bonafied_table where usn='$usn' AND status='1' ";
+               $exc=mysqli_query($conn,$qry);
+               while ($row=mysqli_fetch_array($exc)) {
+               
+                $qry2="select * from student where usn='$usn'";
+                $exc2=mysqli_query($conn,$qry2);
+               while ($row2=mysqli_fetch_array($exc2)) {
+                $name=$row2['name'];
+                $email=$row2['email'];
+                $phone=$row2['phone'];
+              }
+                ?>
+                <tr>
+                  <?php $id=$row['id']; ?>
+                <td><?php echo $usn ?></td>
+                <td><?php echo $name ?></td>
+                <td><?php echo $phone ?></td>
+                <td><?php echo $row['intr_title']; ?></td>
+                <td><?php echo $row['cmp_name']; ?></td>
+                
+                <td><a href="all_student_detail.php?id=<?php echo $id; ?>" class="btn btn-primary">View More</a></td>
+                
+                <?php 
+              }}
+             ?>
               <tr>
-                <td>2JI18MCA55</td>
-                <td>Urmila Mandolkar</td>
-                <td>online Bidding System</td>
-                <td>Code Villa</td>
-                <td><button class="btn btn-primary">View More</button></td>
-                <td><button class="btn btn-danger">Reject</button></td>
+                
               </tr>
             </table>
           </div>

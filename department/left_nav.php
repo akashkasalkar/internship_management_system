@@ -1,3 +1,9 @@
+ <?php
+    session_start();
+    if (!isset($_SESSION['dept_username'])) {
+        header("location:../index.php");
+    }
+ ?>
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -56,18 +62,7 @@ position:absolute;
 
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <a class="nav-link waves-effect" href="dashboard">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">Change Password</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/"
-                target="_blank">View Applications</a>
-            </li>
+           
            
            
           </ul>
@@ -76,7 +71,7 @@ position:absolute;
           <ul class="navbar-nav nav-flex-icons">
             
             <li class="nav-item">
-              <a class="nav-link waves-effect btn btn-danger text-white " href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Logout</a>
+              <a class="nav-link waves-effect btn btn-danger text-white " href="logout.php" >Logout</a>
             </li>
             
           </ul>
@@ -102,6 +97,8 @@ position:absolute;
           <i class="fas fa-table mr-3"></i>Profile</a>
         <a href="add_staff.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-user mr-3"></i>add staff</a>
+          <a href="view_staff.php" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-money-bill-alt mr-3"></i>View Staff</a>
         
         <a href="change_pwd.php" class="list-group-item list-group-item-action waves-effect">
           <i class="fas fa-map mr-3"></i>Change Password</a>

@@ -35,8 +35,8 @@
                   <th>USN</th>
                   <th>Name</th>
                   <th>DOB</th>
-                  <th>Edit</th>
-                  <th>Delete</th>
+                  
+           
                 </tr>
                 <?php 
                 include("include/dbconn.php");
@@ -48,7 +48,7 @@
                   <td><?php echo $usn=$row['usn']; ?></td>
                   <td><?php echo $row['name']; ?></td>
                   <td><?php echo $row['dob']; ?></td>
-                  <td><a href="student_update.php?usn=<?php echo $usn;?>" class="btn btn-primary">Edit</a></td>
+                  <!--td><a href="student_update.php?usn=<?php echo $usn;?>" class="btn btn-primary">Edit</a></td-->
               <td><a href="delete_student.php?usn=<?php echo $usn;?>" class="btn btn-danger" onclick="return confirm('do you want to delete...?');">Delete</a></td>
                </tr>
 

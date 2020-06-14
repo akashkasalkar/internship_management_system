@@ -18,70 +18,59 @@
         <div class="card-body text-center justify-content-between text-danger">
 
           <h4> DEPARTMENT PROFILE </h4>
+<?php
+   $dept_username=$_SESSION['dept_username'];
+  $qry="select * from dept where email='$dept_username' ";
+  $exc=mysqli_query($conn,$qry);
+  while ($row=mysqli_fetch_array($exc)) {
+    # code...?>
+          <form method="post">
+            <table class="table">
+              <tr>
+                <th>Department ID</th>
+                <td><?php echo $row['department_id'] ?></td>
+              </tr>
+              <tr>
+                <th>Department Name</th>
+                <td><?php echo $row['department_name'] ?></td>
+              </tr>
+              <tr>
+                <th>Department Email</th>
+                <td><input type="email" name="dept_email" required class="form-control" value="<?php echo $row['email'] ?>" disabled></td>
+              </tr>
+              <tr>
+                <th></th>
+                <!--td><button class="btn btn-primary btn-sm" name="update">Update</button></td-->
+              </tr>
+            </table>
+           
+          </form>
+    <?php
+  }
+  
+ ?>
 
-          
-
-</div>
-      
-      <div class="row wow fadeIn">
-        <div class="container-fluid col-lg-8">
-          <div class="table table-bordered">
-        
-          <div class="card">
-            
-            <div class="card-body text-center">
-              
-      <!-- Heading -->    
-      <?php
-     
-      $qry="select * from dept where department_name='mca'";
-      $exc=mysqli_query($conn,$qry);
-      while ($row=mysqli_fetch_array($exc)) {
-    ?>
-      <form method="post" action="">
-        <div class="form-group">
-          <label class="h5">Department Id=<?php echo $row['department_id']; ?></label>
-        
         </div>
-        <div class="form-group">
-          <label class="h5">Department Name=<?php echo $row['department_name']; ?></label>
-         
-        </div>
-        <div class="form-group">
-          <label class="h5">HOD email</label>
-          <input type="text"  name="email"  value="<?php echo $row['email'];?>" required="">
-        </div>
-        
-      
-          
-        <div class="form-group">
-          <button class="btn btn-dark" name="update">Update</button>
-        </div>
-      
-    </form>
-  </div>
+     <?php 
 
-  </div>
+      if (isset($_POST['update'])) {
+        $dept_username=$_SESSION['dept_username'];
+        $dept_email=$_POST['dept_email'];
+        $qry="update dept set email='$dept_email'";
+        $exc=mysqli_query($conn,$qry);
+        if ($exc) {
+          # code...
+          echo "<script>alert('Data Updated');
+            window.location='profile.php'
+          </script>";
 
-      <?php } 
-      ?>
-      <?php 
-
-      if (isset($_POST['update']))
-       {
-       
-            echo "<script>
-              window.location='update_email.php';
-            </script>";
-         
-        
         }
-      ?>
-    
-      </div>
-</div>
-      </div>
-     
+        else
+        {
+          echo "err";
+        }
+      }
+     ?>
 
     </div>
   </main>
